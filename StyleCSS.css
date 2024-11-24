@@ -56,6 +56,7 @@ header ul li a{
 .navigation, a{
     position: relative;
     text-decoration: none;
+    -webkit-text-stroke: 0.5px #6F4E37;
 }
 .navigation a::after{
     content: '';
@@ -121,18 +122,24 @@ section img{
 }
 
 .menu{
-    margin-top: 80px;
-    
+    margin-top: 60px;
+    justify-content: center;    
 }
 .menu h3{
     font-size: 70px;
     margin-bottom: 15px;
+    padding-left: 20px;
 }
 .menuitems{
-    display: flex;
     padding-bottom: 10px;
 }
 .coffee{
+    padding-left: 20px;
+    display: flex;
+    padding-bottom: 35px;
+}
+.coffee p{
+    margin-top: 10px;
     padding-left: 20px;
 }
 .menu img{
