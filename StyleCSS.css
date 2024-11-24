@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Slab:wght@100..900&display=swap");
+
+*{
+    font-family: "Roboto Flex", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    background: url('./Imagens/DALL·E\ 2024-11-15\ 16.13.19\ -\ A\ cozy\ and\ modern\ coffee\ shop\ facade\ for\ a\ place\ called\ \'Brew\ &\ Bliss\'.\ The\ exterior\ is\ warm\ and\ inviting\ with\ a\ mix\ of\ rustic\ and\ contemporary\ elemen.webp')no-repeat;
+    background-size: cover;
+}
+
+/* Navbar */
+header{
+   position: absolute; 
+   width: 100%;
+   padding: 30px 100px;
+   color: white;
+   justify-content: space-between;
+   display: flex;
+   align-items: center;
+   font-size: 25px;
+   z-index: 10000;
+}
+header .Logo{
+    font-family: "Playfair Display", serif;
+    background: #6F4E37;
+    padding: 15px;
+    border-radius: 30px;
+    border-color: #FFFDD0;
+    color: white;
+    font-style:oblique;
+    text-decoration: none;
+    font-size: 75px;
+    font-weight: 500;
+}
+header ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.navigation, a{
+    position: relative;
+    text-decoration: none;
+}
+.navigation a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    background: white;
+    height: 4px;
+    left: 0;
+    bottom: -6px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.navigation a:hover::after{
+    transform: scaleX(1);
+}
+
+
+/* Imagem da fachada */
+section{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    padding: 100px;
+}
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #FFFDD0, transparent);
+    z-index: 10000;
+}
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+/* Conteúdo */
+.container{
+    position: relative;
+    padding: 100px;
+    background-color: #FFFDD0;
+    align-items: center;
+    color: #6F4E37;
+}
+.container h2{
+    color: #6F4E37;
+    font-weight: 700;
+    font-size: 120px;
+    padding-bottom: 30px;
+}
+.container p{
+    font-size: 22px;
+}
+
+.menu{
+    margin-top: 80px;
+    
+}
+.menu h3{
+    font-size: 70px;
+    margin-bottom: 15px;
+}
+.menuitems{
+    display: flex;
+    padding-bottom: 10px;
+}
+.coffee{
+    padding-left: 20px;
+}
+.menu img{
+    width: 35%;
+    border-radius: 25px;
+}
+
+
+/* Rodapé */
+footer{
+    background-color: #FFFDD0;
+    width: 100%;
+    height: 100%;
+    margin-top: auto;
+    padding-left: 20px;
+}
+.section{
+    align-items: center;
+    font-size: larger;
+    display: grid;
+    color: #6F4E37;
+    margin: 15px;
+    width: auto;
+}
+.section a{
+    text-decoration: none;
+    color: #6F4E37;
+}
+.section ul li{
+    list-style: none;
+    margin-left: 20px;
+    padding: 2px;
+}
+footer p{
+    margin-top: 5px;
+    font-weight: 400;
+    color: #6F4E37;
+}
